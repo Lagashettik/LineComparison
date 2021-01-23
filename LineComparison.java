@@ -23,13 +23,16 @@ public class LineComparison {
 	String s1= String.valueOf(Length1);
 	String s2= String.valueOf(Length2);
 
-	boolean var =s1.equals(s2);
+	double var =s1.compareTo(s2);
 
-	if(var == true ){
-		System.out.println("Both Lines lengths are equal");
+	if(var == 0 ){
+			System.out.println("Both Line are equal");
+		}
+	else if( var > 0) {
+			System.out.println("Length of Line1 is greater");
 		}
 	else {
-		System.out.println("Both Lines lengths are not equal");
+			System.out.println("Length of Line2 is greater");
 		}
 	}
 }
